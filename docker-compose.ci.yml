@@ -9,7 +9,7 @@ services:
     - '5432:5432'
 
   addressbook:
-    image: $DOCKER_USERNAME/dockerizing-modejs-addressbook:latest
+    image: $DOCKER_USERNAME/dockerizing-nodejs-addressbook:latest
     command: "npm run migrate && npm run pm2"
     environment: 
       DB_SCHEMA: postgres
