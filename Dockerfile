@@ -4,7 +4,7 @@ WORKDIR /opt/app
 RUN useradd app
 COPY addressbook/ .
 RUN npm install
-RUN chown -R app:app /opt/app/
+RUN sudo chown -R app:app /opt/app/
 USER app
 EXPOSE 3000
 CMD [ "npm", "run", "pm2" ]
