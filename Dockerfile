@@ -5,6 +5,7 @@ RUN useradd app
 COPY addressbook/ .
 RUN npm install
 RUN sudo chown -R app:app /opt/app
+RUN sudo mkdir opt/app/.pm2
 RUN sudo chown -R app:app opt/app/.pm2
 USER app
 EXPOSE 3000
