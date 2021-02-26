@@ -8,7 +8,7 @@ services:
     ports:
     - '5432:5432'
 
-  addressook:
+  addressbook:
     image: $DOCKER_USERNAME/dockerizing-modejs-addressbook:latest
     command: "npm run migrate && npm run pm2"
     environment: 
