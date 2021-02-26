@@ -1,4 +1,4 @@
-FROM node:15.10.0-alpine3.10
+FROM registry.semaphoreci.com/node:12
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
 RUN addgroup app
