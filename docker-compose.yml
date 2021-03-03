@@ -1,4 +1,5 @@
 version: "3.7"
+
 services: 
   postgres:
     image: postgres
@@ -11,6 +12,7 @@ services:
       - addressbook-db:/var/lib/postgresql/data
 
   addressbook:
+    # image: addressbook:latest
     build:
       context: .
     environment: 
