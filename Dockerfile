@@ -1,4 +1,5 @@
 FROM registry.semaphoreci.com/node:14
+RUN chown 1001:1001 -R ./
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
 RUN useradd app
